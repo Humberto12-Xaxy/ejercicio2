@@ -232,6 +232,7 @@ public class VehiculoDAO {
             return registro;
         }catch (Throwable e){
             System.out.println("Registro no encontrado");
+            return null;
         }
     }
 
@@ -248,6 +249,7 @@ public class VehiculoDAO {
             return vehiculo;
         }catch (Throwable e){
             System.out.println("Vehiculo no encontrado");
+            return null;
         }
     }
 
