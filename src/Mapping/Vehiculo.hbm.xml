@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM "classpath://org/hibernate/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="Entities">
+    <class dynamic-insert="false"
+           dynamic-update="false" name="Vehiculo" table="vehiculo">
+
+        <id name="id"
+            column="id"
+            type="java.lang.Integer"
+            unsaved-value="null" >
+            <generator class="native">
+            </generator>
+        </id>
+
+        <property name="placa" type="java.lang.String"/>
+        <property name="tipoVehiculo" type="java.lang.Integer"/>
+        <property name="tiempoEstacionado" type="java.lang.Float"/>
+
+    </class>
+</hibernate-mapping>
